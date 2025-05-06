@@ -113,9 +113,6 @@ public struct WaterfallGrid<Data, ID, Content>: View where Data : RandomAccessCo
                     yOffset = CGFloat(indexMin) * (preferenceSizeHeight + spacing) // 水平滚动时，高度是固定的列宽
                     heights[indexMin] += preferenceSizeWidth + spacing
                 }
-
-                // offset 计算需要调整为正值，因为 alignmentGuide 是相对偏移
-                // let offset = CGPoint(x: xOffset, y: yOffset)
                 
                 // alignmentGuide 的计算逻辑似乎是计算负偏移量，保持原样
                 let guideOffset = CGPoint(x: 0 - (scrollDirection == .vertical ? xOffset : yOffset),
