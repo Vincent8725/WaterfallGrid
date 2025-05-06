@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.author = "Paolo Leonardi"
   spec.social_media_url = "https://twitter.com/paololeonardi"
 
-  spec.ios.deployment_target = "13.0"
+  spec.ios.deployment_target = "14.0"
   spec.osx.deployment_target = "10.15"
   spec.watchos.deployment_target = "6.0"
   spec.tvos.deployment_target = "13.0"

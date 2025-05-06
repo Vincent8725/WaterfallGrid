@@ -11,7 +11,7 @@ import PackageDescription
 let package = Package(
     name: "WaterfallGrid",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v14),
         .macOS(.v10_15),
         .tvOS(.v13),
         .visionOS(.v1),
